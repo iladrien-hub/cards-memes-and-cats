@@ -1,1 +1,1 @@
-web: python main.py
+web: gunicorn --bind 0.0.0.0:$PORT -k aiohttp.worker.GunicornWebWorker myapp:create_app
