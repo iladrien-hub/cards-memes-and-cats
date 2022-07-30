@@ -24,9 +24,14 @@ async def websocket_handler(request):
     return ws
 
 
+async def hello(request):
+    return web.Response(text="Hello, world")
+
+
 application = web.Application()
 application.add_routes([
-    web.get('/ws', websocket_handler)
+    # web.get('/ws', websocket_handler)
+    web.get('/', hello)
 ])
 
-# web.run_app(application)
+web.run_app(application)
