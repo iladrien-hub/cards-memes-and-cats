@@ -29,4 +29,4 @@ application.add_routes([
     web.get('/ws', websocket_handler)
 ])
 
-web.run_app(application)
+# web.run_app(application)
