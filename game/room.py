@@ -68,7 +68,6 @@ class Player:
         await self.send_event(events.remove_card(card_type, card.id))
 
 
-
 class Room:
     __ROOM_IDLE_TIMEOUT = 600
     __STOP_EVENT = object()
