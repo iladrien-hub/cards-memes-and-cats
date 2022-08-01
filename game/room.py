@@ -61,7 +61,7 @@ class Player:
         l = {"meme": self.memes, "joke": self.jokes}[card_type]
         return {i.id: i for i in l}.get(card_id)
 
-    async def remove_card(self, card_type: str, card: object):
+    async def remove_card(self, card_type: str, card: MemeCard | JokeCard):
         l = {"meme": self.memes, "joke": self.jokes}[card_type]
         l.remove(card)
 
