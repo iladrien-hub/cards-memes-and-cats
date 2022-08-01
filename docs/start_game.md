@@ -62,6 +62,8 @@ Used to start game. Requires player to be room admin.
 
 ```
 
+---
+
 **Condition** : If count of players is less than 2.
 
 **Code** : `403 FORBIDDEN`
