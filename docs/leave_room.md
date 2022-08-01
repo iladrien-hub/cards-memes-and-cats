@@ -1,6 +1,6 @@
 # Join Room
 
-Used to join game session and retrieve access token.
+Used to join leave game session.
 
 **URL** : `/api/v0/room/leave`
 
