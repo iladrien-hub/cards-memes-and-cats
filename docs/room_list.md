@@ -1,6 +1,6 @@
 # Room List
 
-Used to collect a Token for a registered User.
+Used to collect a list of existing rooms.
 
 **URL** : `/api/v0/room/list`
 
