@@ -7,13 +7,26 @@ Check it out in the game Cards, Memes and Cats.
 
 ## Api Reference
 
-- Open Methods
-  - ``GET:`` [Room List](./docs/room_list.md)
-  - ``POST:`` [Create Room](./docs/create_room.md)
-  - ``POST:`` [Join Room](./docs/join_room.md)
-- Player Methods
-  - ``POST:`` [Leave Room](./docs/leave_room.md)
-  - ``POST:`` [Start Game](./docs/start_game.md)
-  - ``POST:`` [Make Move](./docs/make_move.md)
-- WebSocket
-  - ``WS:`` [Subscribe](./docs/subscribe.md)
+### Open Methods
+
+Open endpoints require no Authentication
+
+- [Room List](./docs/room_list.md): ``GET: /api/v0/room/list`` 
+- [Create Room](./docs/create_room.md): ``POST: /api/v0/room/create`` 
+- [Join Room](./docs/join_room.md): ``POST: /api/v0/room/join`` 
+
+### Player Related
+
+Closed endpoints require a valid Token to be included in the header of the request. 
+A Token can be acquired via Joining the Room.
+
+- [Leave Room](./docs/leave_room.md): ``POST: /api/v0/room/leave`` 
+- [Start Game](./docs/start_game.md): ``POST: /api/v0/room/start`` 
+- [Make Move](./docs/make_move.md): ``POST: /api/v0/game/move`` 
+
+
+### WebSocket
+
+WebSocket is using to push back all game events
+
+- [Subscribe](./docs/subscribe.md): ``WS: /api/v0/game/subscribe/{token}`` 
