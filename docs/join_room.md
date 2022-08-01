@@ -30,29 +30,6 @@ Used to join game session and retrieve access token.
 }
 ```
 
-## Error Response
-
-**Condition** : If any of required parameters was not provided.
-
-**Code** : `400 BAD REQUEST`
-
-**Content** :
-
-```json
-{
-    "success": false,
-    "data": {
-        "type": "HttpError",
-        "message": {
-            "text": "missed required parameters",
-            "params": [
-                "name"
-            ]
-        }
-    }
-}
-```
-
 ## Error Responses
 
 **Condition** : If any of required parameters was not provided.
@@ -81,7 +58,7 @@ Used to join game session and retrieve access token.
 
 **Condition** : If room with such room_id does not exists.
 
-**Code** : `404 BAD REQUEST`
+**Code** : `404 NOT FOUND`
 
 **Content** :
 
